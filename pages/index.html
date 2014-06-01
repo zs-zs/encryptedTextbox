@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Encrypted Textbox</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel=StyleSheet href="css/index.css" type="text/css">
+	</head>
+	<body>
+		<textarea id="text" placeholder="Enter some text here..."></textarea>
+		<div id="footer">
+			<input type="text" id="fileUrl"></input>
+			<button id="save">Save</button>
+			<div id="info">Enter some text and click on the button to publish your text to other users</div>
+		</div>
+		<!-- we could use browserify-shim for libraries -->
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/libs/jquery-1.11.1.min.js"></script>
+		<script src="js/libs/forge.min.js"></script>
+		<script src="js/bundle.js"></script>
+	</body>
+</html>
